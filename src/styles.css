@@ -1,1 +1,667 @@
-/* You can add global styles to this file, and also import other style files */
+html{
+    height: 100%;
+}
+body{
+    padding-top: 30px;
+    height: 100%;
+}
+
+.bg-1 { 
+  background-color: #000000; /* Black */
+  color: #ffffff;
+}
+.bg-2 { 
+  background-color: #474e5d; /* Dark Blue */
+  color: #ffffff;
+}
+.bg-3 { 
+  background-color: #ffffff; /* White */
+  color: #555555;
+}
+.bg-4 { 
+  background-color: #2f2f2f; /* Black Gray */
+  color: #fff;
+}
+
+.bg-5 {
+    background-color: #9099a2;
+    color: #ffffff;
+}
+
+.container-fluid {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.white-bg { 
+  background-color: antiquewhite;
+}
+
+#index_body{
+/*
+    background: url("/assets/images/bsvBackground70pct.jpg");
+    background-size: cover;
+    background-position: center;
+*/
+    color: white;
+}
+
+.jumbo {
+    /* IE8 and below */
+    background: linen;
+}
+
+.svc-div{
+    background: rgba(238, 238, 238, 1);
+    padding: 10px;
+}
+
+.pad-right{
+    padding-right: 10px;
+}
+
+.white-text {
+    color: #FFFFFF;
+}
+
+.black-text {
+    color: #000000;
+    font-weight: bold;
+}
+
+#homeJumbo {
+    margin-bottom: 0px;
+    background-image: url("/assets/images/bsvBackground70pct.jpg");
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #767676;
+    height: 400px;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+
+.spacer{
+    padding: 20px;
+}
+
+.welcome-div{
+    padding-top: 300px;
+}
+
+.top-div{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.center-div{
+    margin:auto;
+}
+
+.white-text{
+    color: linen;
+}
+
+.black-text{
+    color: black;
+}
+
+.message-text{
+    color: black;
+}
+
+.half-width{
+    width: 50%;
+    text-align: center;
+}
+
+.offset-div{
+    padding-top: 20px;
+}
+
+.tagline{
+    background-color: antiquewhite;
+    text-align: center;
+    width: 60%;
+}
+
+.in-line{
+    display: inline-block;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    border: 5px;
+    border-color: antiquewhite;
+    border-style: solid;
+    width: 75%;
+}
+
+.title-text {
+    font-size: 50px;
+    padding: 40px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.tagline {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    padding: 25px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 55%;
+}
+
+.about-me {
+    margin-top: 20px;
+    text-align: left;
+    font-size: large;
+    color: #000000;
+    width: 75%;
+    margin: auto;
+}
+
+html{
+    height: 100%;
+}
+
+#content{
+    text-align: center;
+    padding-top: 25%;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+h1{
+    font-weight: 700;
+    font-size: 5em;
+}
+
+.splash{
+    background: url("/assets/images/bsvBackground70pct.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.fade-in1 {
+    animation: fadein 2s;
+}
+
+.fade-in2 {
+    animation: fadein 4s;
+}
+
+.fade-in3 {
+    animation: fadein 10s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.dark-bg{
+    background: #3b3b3b;
+}
+
+.black-bg{
+    background: #9099a2;
+}
+
+.buffer{
+    padding: 20px;
+}
+.parallax-skills {
+    background-image: url("/assets/images/monitor-background.jpg");
+    
+    height: 90%;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    
+    height: 100%;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax {
+    /* The image used 
+    background-image: url("/assets/images/The-Coder.jpg");*/
+
+    /* Full height */
+    height: 25%;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a.black-link:link{
+    color: black;
+    text-decoration: none;
+}
+
+a.white-link:link{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.margin-left {
+    margin-left: 20px;
+}
+
+.margin-10 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.skill-square {
+    width: 40px;
+    height: 40px;
+}
+
+.resume-container {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    width:100%;
+}
+
+.info-wrap {
+    top: 20px;
+    left: 20px;			
+    box-shadow: 0 0 0 10px rgba(255,255,255,0.2), inset 0 0 3px rgba(115,114, 23, 0.8);
+}
+
+.info-wrap, .info{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.info .info-front {
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+
+.info .info-back {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: all 0.4s ease-in-out 0.2s;
+    -moz-transition: all 0.4s ease-in-out 0.2s;
+    -o-transition: all 0.4s ease-in-out 0.2s;
+    -ms-transition: all 0.4s ease-in-out 0.2s;
+    transition: all 0.4s ease-in-out 0.2s;
+}
+
+.item:hover .info-front {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+}
+
+.item:hover .info-back {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.info > div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-position: center center;
+    -webkit-backface-visibility: hidden;
+}			
+
+.info-back h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+}			
+
+.item {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    cursor: default;
+}
+
+.transformer { 
+    position: relative; 
+    display: inline-block; 
+    border-radius: 50%;
+    border-style: solid; 
+    border-width: 5px;
+    border-color: bisque;
+    color: #FFFFFF !important;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+
+}
+
+.transform-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    color: #FFFFFF !important;
+    opacity:0;
+    font-weight: bold;
+    margin-top: 32px;
+    transition:1s;
+}
+
+.transformer:hover .transform-text {
+    opacity:1;
+}	
+
+.fa-50px {
+    font-size: 50px !important;
+    margin-top: 16px;
+    transition:1s;
+}			
+
+.transformer:hover .fa-50px {
+    opacity:0;
+}	
+
+.skills-a {
+    width: 45%;
+    float: left;
+    margin-right: 15px;
+}
+.skills-b {
+    margin-left: 15%;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.my-image {
+    display:inline; 
+    float:right;
+    margin: 10px;
+}
+
+.margin-lr-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.black-border-top {
+    border-top: 2px;
+    border-top-color: black;
+    border-top-style: solid;
+}
+
+.narrow-tagline {
+    display: none;
+}
+
+.photo-border {
+    border: 5px;
+    border-color: antiquewhite;
+    border-style: solid;
+}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image Logo */
+.bgimg-1 {
+    background-image: url('/assets/images/The-Coder.jpg');
+    min-height: 65%;
+}
+
+/* Second image Skills */
+.bgimg-2 {
+    background-image: url("/assets/images/The-Coder.jpg");
+    min-height: 300px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+.hide {
+    display: none
+}
+
+.show {
+    display: auto
+}
+.mySlides {
+    display:none
+}
+
+.w3-left, .w3-right, .w3-badge {
+    cursor:pointer
+}
+.w3-badge {
+    height:13px;
+    width:13px;
+    padding:0
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 350px;
+}
+
+div.thumbnail:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+    
+    .smaller-mobile-h2 {
+        font-size: 20px;
+    }
+    
+    .smaller-mobile-img {
+        height: 90px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    .my-image {
+        float:none;
+    }
+
+    .narrow-tagline {
+        font-size: 20px;
+    }
+
+    .title-text {
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    
+    .skills-a {
+        width: 100%;
+        height: auto;
+        float:none;
+    }
+    .skills-b {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+}
+
+@media screen and (max-width: 1030px) {
+    
+    .narrow-tagline {
+        display: inherit;
+    }
+
+    .wide-tagline {
+        display: none;
+    }    
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}

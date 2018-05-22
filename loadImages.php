@@ -1,6 +1,6 @@
 <?php
 
-    $dir = "images/";
+    $dir = "assets/images/";
     $images = array();
 
     if (isset($_GET['folder']))

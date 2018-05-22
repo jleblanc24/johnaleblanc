@@ -2,13 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Jal</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <meta name="author" content="JOHN LEBLANC">
+  <meta name="keywords" content="john leblanc, johnaleblanc, website, design, android, photography, apps, websitedesign, Javascript, Java, AngularJS, HTML, CSS, Bootstrap">
+  <meta name="robots" content="INDEX, NOFOLLOW">
+  <meta name="description" content="John LeBlanc, Technical Team Leader, Software Engineer, Web developer, Android app developer, Photographer and Massachusetts licensed real estate agent.">
+  
+  <title>John LeBlanc - Technical Team Leader – Software Engineer – Web Developer – Photographer</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>        
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  
+  <link rel="shortcut icon" href="assets/images/BSV%20Transparent%20Icon%2032.png" />
+
   <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
   <app-root></app-root>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script>
+
+    // Change style of navbar on scroll
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+  </script> 
+
 </body>
 </html>

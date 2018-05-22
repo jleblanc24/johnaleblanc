@@ -1,0 +1,104 @@
+<div class="container w3-padding-64">
+  <h2 class="smaller-mobile-h2" *ngIf="root === 'gps'">
+    <img src="../assets/images/GPS.png" alt="GPS Central Massachusetts" class="smaller-mobile-img"> GPS Central MA - 2009
+  </h2>
+  <h2 class="smaller-mobile-h2" *ngIf="root === 'gsc'">
+    <img src="../assets/images/gsc.gif" alt="Grafton Soccer Club" class="smaller-mobile-img"> Grafton Soccer Club
+  </h2>
+  <h2 class="smaller-mobile-h2" *ngIf="root === 'hcu'">
+    <img src="../assets/images/gll.png" alt="Grafton Little League" class="smaller-mobile-img"> Grafton Little League - Homefield CU
+  </h2>
+  <br>
+  <div class="w3-content w3-display-container" style="max-width:550px">
+
+    <span *ngIf="root === 'gps'">
+
+      <img class="gpsSlides" src="../../assets/images/gps/01.JPG" style="width:100%">
+      <img class="gpsSlides" src="../../assets/images/gps/06.JPG" style="width:100%">
+      <img class="gpsSlides" src="../../assets/images/gps/02.JPG" style="width:100%">
+      <img class="gpsSlides" src="../../assets/images/gps/03.JPG" style="width:100%">
+      <img class="gpsSlides" src="../../assets/images/gps/04.JPG" style="width:100%">
+      <img class="gpsSlides" src="../../assets/images/gps/05.JPG" style="width:100%">
+
+    </span>
+
+    <span *ngIf="root === 'gsc'">
+
+      <img class="gscSlides" src="../../assets/images/gsc/01.JPG" style="width:100%">
+      <img class="gscSlides" src="../../assets/images/gsc/02.JPG" style="width:100%">
+      <img class="gscSlides" src="../../assets/images/gsc/03.JPG" style="width:100%">
+      <img class="gscSlides" src="../../assets/images/gsc/04.JPG" style="width:100%">
+
+    </span>
+
+    <span *ngIf="root === 'hcu'">
+
+      <img class="hcuSlides" src="../../assets/images/hcu/02.JPG" style="width:100%">
+
+    </span>
+
+    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%"></div>
+
+  </div>
+
+  <div id="imageModal" class="modal" (window:keyup.esc)="closeModal()" 
+      (window:keyup.arrowleft)="plusSlides(-1)" (window:keyup.arrowright)="plusSlides(1)">
+    
+    <span class="close cursor" (click)="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div id="modalContent">
+      </div>
+      
+      <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+      <a class="next" (click)="plusSlides(1)">&#10095;</a>
+
+    </div>
+  </div>
+
+  <div class="w3-content w3-display-container w3-padding-64">
+    <div *ngFor="let folder of folders; let i = index">
+      <a href="javascript:;" (click)="openFolder(i, folder)" id="open{{i}}">
+        <i class="fa fa-folder"></i> {{folder}}</a>
+      <a href="javascript:;" (click)="closeFolder(i)" class="hide" id="close{{i}}">
+        <i class="fa fa-folder-open"></i> {{folder}}</a>
+      <div id="folder{{i}}" class="container hide">
+
+        <div *ngFor="let row of images[folder]; let rowIndex = index" class="row">
+
+          <div *ngFor="let img of row; let imgIndex = index" [ngClass]="colClass[folder]">
+
+            <div class="thumbnail">
+              <span *ngIf="img.indexOf('.mp4') >= 0">
+                <img src="../assets/images/movieSmall.png">
+                <br> {{img.slice(img.lastIndexOf("/") + 1)}}
+                <br>
+                <a target="_blank" href="{{img}}">
+                  <i class="fa fa-eye" aria-hidden="true"></i> Download Video
+                </a>
+              </span>
+              <span *ngIf="img.indexOf('.mp4') < 0">
+                <img src="{{img}}" (click)="openModal(folder, ((rowIndex * row.length) + imgIndex))"
+                  class="img-responsive" style="cursor:pointer"> 
+                <!-- <a target="_blank" href="{{img}}">
+                    <img src="{{img}}" alt="Image {{img}}" class="img-responsive" style="cursor:pointer">
+                </a> -->
+                <!-- <a href="{{img}}" data-lightbox="{{folder}}">
+                  <img src="{{img}}" alt="Image {{img}}">
+                </a> -->
+                <br>
+                <a target="_blank" href="{{img}}">
+                  <i class="fa fa-download" aria-hidden="true"></i> Download
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p style="text-align: center">Views: {{viewCount}}</p>
+
+</div>

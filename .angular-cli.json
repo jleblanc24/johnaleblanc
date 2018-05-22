@@ -8,8 +8,7 @@
       "root": "src",
       "outDir": "dist",
       "assets": [
-        "assets",
-        "favicon.ico"
+        "assets"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -19,9 +18,13 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/lightbox2/src/css/lightbox.css",
+        "../node_modules/font-awesome/css/font-awesome.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/lightbox2/src/js/lightbox.js"        
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
